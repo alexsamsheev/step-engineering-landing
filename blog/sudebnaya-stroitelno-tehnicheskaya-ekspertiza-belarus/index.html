@@ -10,50 +10,32 @@
 <meta property="og:description" content="Кто назначает, сколько стоит (от 250 BYN), сроки до 30 дней, как оспорить заключение — разбор для заказчиков в Минске и по РБ.">
 <meta property="og:type" content="article">
 <style>
-  :root {
-    --bg:#ffffff; --bg2:#f4f6f8; --accent:#14477e; --fg:#1c2733; --muted:#5b6b7b; --radius:14px;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--fg); font:17px/1.7 "Segoe UI",system-ui,-apple-system,sans-serif; }
-  h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }
-  .wrap { max-width:860px; margin:0 auto; padding:0 20px; }
+ :root {
+ --bg:#ffffff; --bg2:#f4f6f8; --accent:#14477e; --fg:#1c2733; --muted:#5b6b7b; --radius:14px;
+ }
+ * { margin:0; padding:0; box-sizing:border-box; }
+ body { background:var(--bg); color:var(--fg); font:17px/1.7 "Segoe UI",system-ui,-apple-system,sans-serif; }
+ h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }.wrap { max-width:860px; margin:0 auto; padding:0 20px; }.topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }.topbar.wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }.topbar a.brandlink { color:var(--accent); font-weight:700; text-decoration:none; }.topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }.topbar a.cta-mini:hover { opacity:.92; }
 
-  .topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }
-  .topbar .wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
-  .topbar a.brandlink { color:var(--accent); font-weight:700; text-decoration:none; }
-  .topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }
-  .topbar a.cta-mini:hover { opacity:.92; }
+ article { padding:56px 0 24px; }
+ article h1 { font-size:clamp(28px,4.5vw,44px); margin-bottom:22px; }
+ article h2 { font-size:26px; margin:44px 0 14px; }
+ article h3 { font-size:20px; margin:30px 0 10px; color:var(--accent); }
+ article p { margin-bottom:16px; }
+ article ul, article ol { margin:0 0 18px 24px; }
+ article li { margin-bottom:9px; }.lead-def { background:var(--bg2); border-left:4px solid var(--accent);
+ border-radius:0 12px 12px 0; padding:20px 22px; margin:6px 0 26px; }.err { background:#fff; border:1px solid #dde4ec; border-radius:var(--radius); padding:18px 20px; margin-bottom:14px; }.err b.t { display:block; margin-bottom:6px; }.src { color:var(--muted); font-size:14px; }.faq-a { color:var(--fg); }.cta { background:var(--accent); color:#fff; border-radius:18px; padding:38px 34px; margin:40px 0 20px; }.cta h2 { color:#fff; margin-top:0; }.cta p { color:#dbe6f2; max-width:700px; }.cta a.btn-w { display:inline-block; background:#fff; color:var(--accent); font-weight:700;
+ padding:15px 32px; border-radius:999px; text-decoration:none; margin-top:10px; transition:transform.15s ease; }.cta a.btn-w:hover { transform:translateY(-2px); }
 
-  article { padding:56px 0 24px; }
-  article h1 { font-size:clamp(28px,4.5vw,44px); margin-bottom:22px; }
-  article h2 { font-size:26px; margin:44px 0 14px; }
-  article h3 { font-size:20px; margin:30px 0 10px; color:var(--accent); }
-  article p { margin-bottom:16px; }
-  article ul, article ol { margin:0 0 18px 24px; }
-  article li { margin-bottom:9px; }
-  .lead-def { background:var(--bg2); border-left:4px solid var(--accent);
-    border-radius:0 12px 12px 0; padding:20px 22px; margin:6px 0 26px; }
-  .err { background:#fff; border:1px solid #dde4ec; border-radius:var(--radius); padding:18px 20px; margin-bottom:14px; }
-  .err b.t { display:block; margin-bottom:6px; }
-  .src { color:var(--muted); font-size:14px; }
-
-  .faq-a { color:var(--fg); }
-  .cta { background:var(--accent); color:#fff; border-radius:18px; padding:38px 34px; margin:40px 0 20px; }
-  .cta h2 { color:#fff; margin-top:0; }
-  .cta p { color:#dbe6f2; max-width:700px; }
-  .cta a.btn-w { display:inline-block; background:#fff; color:var(--accent); font-weight:700;
-    padding:15px 32px; border-radius:999px; text-decoration:none; margin-top:10px; transition:transform .15s ease; }
-  .cta a.btn-w:hover { transform:translateY(-2px); }
-
-  footer { border-top:1px solid #dde4ec; background:var(--bg2); padding:24px 0;
-    color:var(--muted); font-size:14px; }
-  @media(max-width:600px){ .cta{padding:28px 22px} article h1{font-size:27px} }
+ footer { border-top:1px solid #dde4ec; background:var(--bg2); padding:24px 0;
+ color:var(--muted); font-size:14px; }
+ @media(max-width:600px){.cta{padding:28px 22px} article h1{font-size:27px} }
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Кто назначает судебную строительно-техническую экспертизу в Беларуси?","acceptedAnswer":{"@type":"Answer","text":"В Беларуси судебную строительно-техническую экспертизу назначает суд — определением, либо органы предварительного расследования — постановлением. Проводят её государственные судебные эксперты ГКСЭ или негосударственные судебные эксперты, а срок производства не может превышать 30 календарных дней."}},
 {"@type":"Question","name":"Сколько длится судебная экспертиза по закону РБ?","acceptedAnswer":{"@type":"Answer","text":"Срок судебной строительно-технической экспертизы в Беларуси — не более 30 календарных дней: это впервые закреплено Законом «О судебно-экспертной деятельности», действующим с 2021 года. На практике по сложным или многообъектным делам сроки могут увеличиваться."}},
-{"@type":"Question","name":"Сколько стоит строительная экспертиза в Минске?","acceptedAnswer":{"@type":"Answer","text":"Частная строительно-техническая экспертиза в Минске стоит от 250 до 500+ BYN в зависимости от объекта, объёма и вопросов. По платным экспертизам ГКСЭ час работы эксперта стоит 58,71–62,80 BYN. Досудебное заключение специалиста — от 330 BYN."}},
+{"@type":"Question","name":"Сколько стоит строительная экспертиза в Минске?","acceptedAnswer":{"@type":"Answer","text":"Частная строительно-техническая экспертиза в Минске стоит от 250 до 500+ BYN в зависимости от объекта, объёма и вопросов. По платным экспертизам ГКСЭ час работы эксперта стоит 58,71–62,80 BYN — актуальный тариф опубликован на sudexpert.gov.by. Досудебное заключение специалиста — от 330 BYN."}},
 {"@type":"Question","name":"Можно ли оспорить заключение судебной строительно-технической экспертизы?","acceptedAnswer":{"@type":"Answer","text":"Заключение эксперта не обжалуется отдельно: возражения заявляются в суде, рассматривающем дело. Основания для оспаривания — ходатайство о повторной или дополнительной экспертизе, вызов эксперта в суд, формальные нарушения и методические ошибки."}},
 {"@type":"Question","name":"По каким нормативам оценивают техническое состояние зданий в Беларуси?","acceptedAnswer":{"@type":"Answer","text":"Техническое состояние зданий и сооружений в Беларуси оценивают по СН 1.04.01-2020 «Техническое состояние зданий и сооружений. Основные требования»; правила обследования строительных конструкций устанавливает СН 1.04.02-2022, действующее с 5 мая 2022 года. Ранее действовавший ТКП 45-1.04-305-2016 отменён."}}]}
 </script>
@@ -61,14 +43,14 @@
 <body>
 
 <div class="topbar">
-  <div class="wrap">
-    <a class="brandlink" href="/">ШАГ · Инженерно-консалтинговая группа</a>
-    <a class="cta-mini" href="/#form">Разобрать мою ситуацию</a>
-  </div>
+ <div class="wrap">
+ <a class="brandlink" href="/">ШАГ · Инженерно-консалтинговая группа</a>
+ <a class="cta-mini" href="/#form">Разобрать мою ситуацию</a>
+ </div>
 </div>
 
 <article>
-  <div class="wrap">
+ <div class="wrap">
 
 <h1>Судебная строительно-техническая экспертиза в Беларуси: 2026</h1>
 
@@ -138,7 +120,7 @@
 <p>Честные цифры по рынку Минска:</p>
 
 <ul>
-<li>частные организации — от 250 до 500+ BYN за экспертизу: на рынке есть предложения от 250 BYN, от 395 BYN и от 500 BYN в зависимости от организации и объекта;</li>
+<li>частные организации — от 250 до 500+ BYN за экспертизу в зависимости от организации, объекта и числа вопросов;</li>
 <li>досудебное заключение специалиста — от 330 BYN;</li>
 <li>Государственный комитет судебных экспертиз по платным экспертизам — 58,71–62,80 BYN за час работы эксперта.</li>
 </ul>
@@ -154,39 +136,39 @@
 <h2 id="faq">FAQ — частые вопросы</h2>
 
 <h3>Кто назначает судебную строительно-техническую экспертизу в Беларуси?</h3>
-<p class="faq-a">В Беларуси судебную строительно-техническую экспертизу назначает суд — определением, либо органы предварительного расследования — постановлением. Проводят её государственные судебные эксперты ГКСЭ или негосударственные судебные эксперты, а срок производства не может превышать 30 календарных дней <span class="src">(Закон РБ «О судебно-экспертной деятельности»; sudexpert.gov.by, bii.by)</span>.</p>
+<p class="faq-a">В Беларуси судебную строительно-техническую экспертизу назначает суд — определением, либо органы предварительного расследования — постановлением. Проводят её государственные судебные эксперты ГКСЭ или негосударственные судебные эксперты, а срок производства не может превышать 30 календарных дней <span class="src">(Закон РБ «О судебно-экспертной деятельности»)</span>.</p>
 
 <h3>Сколько длится судебная экспертиза по закону РБ?</h3>
-<p class="faq-a">Срок судебной строительно-технической экспертизы в Беларуси — не более 30 календарных дней: это впервые закреплено Законом «О судебно-экспертной деятельности», действующим с 2021 года. На практике по сложным или многообъектным делам сроки могут увеличиваться, поэтому точную дату заключения лучше уточнять у исполнителя <span class="src">(pravo.by, bka.brest.by)</span>. Для досудебных обследований предельный срок законом не установлен — его определяет договор.</p>
+<p class="faq-a">Срок судебной строительно-технической экспертизы в Беларуси — не более 30 календарных дней: это впервые закреплено Законом «О судебно-экспертной деятельности», действующим с 2021 года. На практике по сложным или многообъектным делам сроки могут увеличиваться, поэтому точную дату заключения лучше уточнять у исполнителя. Для досудебных обследований предельный срок законом не установлен — его определяет договор.</p>
 
 <h3>Сколько стоит строительная экспертиза в Минске?</h3>
-<p class="faq-a">Частная строительно-техническая экспертиза в Минске стоит от 250 до 500+ BYN в зависимости от объекта, объёма и вопросов: например, от 250 BYN <span class="src">(tehnadzor-minsk.by)</span>, от 395 BYN <span class="src">(inexpert.by)</span>, от 500 BYN <span class="src">(beltex.by)</span>. По платным экспертизам ГКСЭ час работы эксперта стоит 58,71–62,80 BYN <span class="src">(sudexpert.gov.by)</span>. Досудебное заключение специалиста — от 330 BYN. Итог зависит от площади объекта, числа вопросов и необходимости вскрытия конструкций.</p>
+<p class="faq-a">Частная строительно-техническая экспертиза в Минске стоит от 250 до 500+ BYN в зависимости от объекта, объёма и вопросов. По платным экспертизам ГКСЭ час работы эксперта стоит 58,71–62,80 BYN — актуальный тариф опубликован на sudexpert.gov.by. Досудебное заключение специалиста — от 330 BYN. Итог зависит от площади объекта, числа вопросов и необходимости вскрытия конструкций.</p>
 
 <h3>Можно ли оспорить заключение судебной строительно-технической экспертизы?</h3>
 <p class="faq-a">Заключение эксперта не обжалуется отдельно: возражения заявляются в суде, рассматривающем дело. Основания для оспаривания — ходатайство о повторной или дополнительной экспертизе, вызов эксперта в суд, формальные нарушения (реквизиты, компетенция эксперта) и методические ошибки, например неприменение ТНПА при исследовании <span class="src">(Закон РБ «О судебно-экспертной деятельности», по процессуальному законодательству Республики Беларусь)</span>. Частые поводы на практике: отсутствие извещения сторон об осмотре и выводы, не подтверждённые материалами дела. Решение по ходатайству принимает суд.</p>
 
 <h3>По каким нормативам оценивают техническое состояние зданий в Беларуси?</h3>
-<p class="faq-a">Техническое состояние зданий и сооружений в Беларуси оценивают по СН 1.04.01-2020 «Техническое состояние зданий и сооружений. Основные требования»; правила обследования строительных конструкций устанавливает СН 1.04.02-2022, действующее с 5 мая 2022 года. Ранее действовавший ТКП 45-1.04-305-2016 отменён <span class="src">(ohrana-truda.by, bsc.by, jvs.by)</span>.</p>
+<p class="faq-a">Техническое состояние зданий и сооружений в Беларуси оценивают по СН 1.04.01-2020 «Техническое состояние зданий и сооружений. Основные требования»; правила обследования строительных конструкций устанавливает СН 1.04.02-2022, действующее с 5 мая 2022 года. Ранее действовавший ТКП 45-1.04-305-2016 отменён.</p>
 
 <p class="src"><em>Материал актуален на август 2026 года.</em></p>
 
 <div class="more" style="background:var(--bg2);border:1px solid #dde4ec;border-radius:14px;padding:18px 22px;margin:30px 0 8px;"><b style="color:#14477e">Другие разборы:</b> <a href="/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus" style="color:#14477e;font-weight:600">Обследование зданий и сооружений — когда обязательно, этапы, кто вправе, цены 2026</a></div>
 
 <div class="cta">
-  <h2>Получите консультацию до назначения экспертизы</h2>
-  <p>Экспертиза — не лотерея, а процесс, на который сторона может влиять. Специалисты инженерно-консалтинговой группы ШАГ (Минск) помогут оценить перспективы спора, провести досудебное обследование, сформулировать вопросы для суда и проконтролировать ход экспертизы. Обследования и экспертизы выполняют структуры группы — ОДО «Стройтестэкспертиза» (директор Игорь Карпелев) и ОДО «Инвостройтест Плюс» — по действующим нормам Республики Беларусь.</p>
-  <p>С руководителями вы можете говорить напрямую, а выводы специалисты сопровождают до результата в суде. Запишитесь на консультацию до того, как экспертиза будет назначена, — это сэкономит время и деньги.</p>
-  <a class="btn-w" href="/#form">Разобрать мою ситуацию</a>
+ <h2>Получите консультацию до назначения экспертизы</h2>
+ <p>Экспертиза — не лотерея, а процесс, на который сторона может влиять. Специалисты инженерно-консалтинговой группы ШАГ (Минск) помогут оценить перспективы спора, провести досудебное обследование, сформулировать вопросы для суда и проконтролировать ход экспертизы. Обследования и экспертизы выполняют структуры группы — ОДО «Стройтестэкспертиза» (директор Игорь Карпелев) и ОДО «Инвостройтест Плюс» — по действующим нормам Республики Беларусь.</p>
+ <p>С руководителями вы можете говорить напрямую, а выводы специалисты сопровождают до результата в суде. Запишитесь на консультацию до того, как экспертиза будет назначена, — это сэкономит время и деньги.</p>
+ <a class="btn-w" href="/#form">Разобрать мою ситуацию</a>
 </div>
 
-  </div>
+ </div>
 </article>
 
 <footer>
-  <div class="wrap">
-    <span>ШАГ — инженерно-консалтинговая группа · Минск · <a href="/" style="color:var(--accent)">Главная страница услуг</a> · <a href="/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus" style="color:var(--accent)">Обследование зданий</a></span>
-    <span>+375 29 158 57 02 · ikarpelev@mail.ru</span>
-  </div>
+ <div class="wrap">
+ <span>ШАГ — инженерно-консалтинговая группа · Минск · <a href="/" style="color:var(--accent)">Главная страница услуг</a> · <a href="/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus" style="color:var(--accent)">Обследование зданий</a></span>
+ <span>+375 29 158 57 02 · ikarpelev@mail.ru</span>
+ </div>
 </footer>
 
 </body>
