@@ -1,0 +1,35 @@
+{
+  "brand_line": "ШАГ — инженерно-консалтинговая группа · Минск",
+  "home_contacts": "+375 29 158 57 02 · ikarpelev@mail.ru · +375 29 676 09 81 · dmitriy@agafonov.name",
+  "article_contacts": "+375 29 158 57 02 · ikarpelev@mail.ru",
+  "articles": [
+    {
+      "slug": "sudebnaya-stroitelno-tehnicheskaya-ekspertiza-belarus",
+      "short": "Судебная СТЭ"
+    },
+    {
+      "slug": "obsledovanie-zdaniy-i-sooruzheniy-belarus",
+      "short": "Обследование зданий"
+    },
+    {
+      "slug": "tehnicheskiy-nadzor-za-stroitelstvom-belarus",
+      "short": "Технадзор"
+    },
+    {
+      "slug": "kompleksnoe-upravlenie-stroitelnoy-deyatelnostyu-belarus",
+      "short": "Управление стройкой"
+    },
+    {
+      "slug": "rukovodstvo-stroitelnym-proektom-belarus",
+      "short": "Руководство проектом"
+    },
+    {
+      "slug": "byudzhet-stroitelnogo-proekta-belarus",
+      "short": "Бюджет проекта"
+    },
+    {
+      "slug": "podbor-tehnologiy-materialov-oborudovaniya-belarus",
+      "short": "Подбор технологий"
+    }
+  ]
+}
