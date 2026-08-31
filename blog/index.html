@@ -15,39 +15,46 @@
  }
  * { margin:0; padding:0; box-sizing:border-box; }
  body { background:var(--bg); color:var(--fg); font:17px/1.7 "Segoe UI",system-ui,-apple-system,sans-serif; }
- h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }.wrap { max-width:860px; margin:0 auto; padding:0 20px; }.topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }.topbar.wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }.topbar a.brandlink { color:var(--accent); font-weight:700; text-decoration:none; }.topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }.topbar a.cta-mini:hover { opacity:.92; }
+ h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }
+ .wrap { max-width:860px; margin:0 auto; padding:0 20px; }
+ .topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }
+ .topbar .wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+ .topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }
+ .topbar a.cta-mini:hover { opacity:.92; }
+ .lockup { display:flex; align-items:center; gap:10px; text-decoration:none; }
+ .lockup img { height:40px; display:block; }
+ .lockup span { color:#5b6b7b; font-size:11.5px; line-height:1.3; }
 
  article { padding:56px 0 24px; }
- article h1 { font-size:clamp(28px,4.5vw,44px); margin-bottom:22px; }
- article h2 { font-size:26px; margin:44px 0 14px; }
- article h3 { font-size:20px; margin:30px 0 10px; color:var(--accent); }
- article p { margin-bottom:16px; }
- article ul, article ol { margin:0 0 18px 24px; }
- article li { margin-bottom:9px; }
- article a.inline { color:var(--accent); }.lead-def { background:var(--bg2); border-left:4px solid var(--accent);
- border-radius:0 12px 12px 0; padding:20px 22px; margin:6px 0 26px; }.src { color:var(--muted); font-size:14px; }.cta { background:var(--accent); color:#fff; border-radius:18px; padding:38px 34px; margin:40px 0 20px; }.cta h2 { color:#fff; margin-top:0; }.cta p { color:#dbe6f2; max-width:700px; }.cta a.btn-w { display:inline-block; background:#fff; color:var(--accent); font-weight:700;
- padding:15px 32px; border-radius:999px; text-decoration:none; margin-top:10px; transition:transform.15s ease; }.cta a.btn-w:hover { transform:translateY(-2px); }.more { background:var(--bg2); border:1px solid #dde4ec; border-radius:var(--radius); padding:18px 22px; margin:30px 0 8px; }.more b { color:var(--accent); }.more a { color:var(--accent); font-weight:600; }
+ article h1 { font-size:clamp(28px,4.5vw,44px); margin-bottom:14px; }
+ article > .wrap > p { color:var(--muted); max-width:720px; }
 
- footer { border-top:1px solid #dde4ec; background:var(--bg2); padding:24px 0;
- color:var(--muted); font-size:14px; }
- @media(max-width:600px){.cta{padding:28px 22px} article h1{font-size:27px} }
-</style>
-
-<style>
- .bitem { padding:20px 0; border-bottom:1px solid #dde4ec; }
- .bitem:first-of-type { border-top:1px solid #dde4ec; margin-top:26px; }
+ .bitem { padding:22px 0; border-bottom:1px solid #e6ecf2; }
+ .bitem:first-of-type { border-top:1px solid #e6ecf2; margin-top:28px; }
+ .bitem .tag { display:inline-block; background:var(--bg2); color:var(--accent); border-radius:999px;
+   padding:3px 12px; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; margin-bottom:8px; }
  .bitem h2 { margin:0 0 8px; font-size:22px; }
  .bitem h2 a { color:var(--accent); text-decoration:none; }
  .bitem h2 a:hover { text-decoration:underline; }
  .bitem p { color:var(--muted); margin:0 0 6px; }
- .bitem .bdate { font-size:13px; }
+ .bitem .bdate { font-size:13px; color:#8a97a5; }
+ .bnote { margin-top:34px; color:var(--muted); font-size:14px; background:var(--bg2);
+   border-radius:12px; padding:12px 16px; }
+
+ footer { border-top:1px solid #dde4ec; background:var(--bg2); padding:24px 0;
+ color:var(--muted); font-size:14px; }
+ @media(max-width:600px){ article h1{font-size:27px} }
 </style>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "ItemList", "name": "Статьи и разборы — инженерно-консалтинговая группа ШАГ", "numberOfItems": 10, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Судебная строительно-техническая экспертиза в Беларуси: 2026", "url": "https://step-engineering-landing.vercel.app/blog/sudebnaya-stroitelno-tehnicheskaya-ekspertiza-belarus"}, {"@type": "ListItem", "position": 2, "name": "Обследование зданий и сооружений в Беларуси: цены 2026", "url": "https://step-engineering-landing.vercel.app/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus"}, {"@type": "ListItem", "position": 3, "name": "Технический надзор за строительством в Беларуси: цены 2026", "url": "https://step-engineering-landing.vercel.app/blog/tehnicheskiy-nadzor-za-stroitelstvom-belarus"}, {"@type": "ListItem", "position": 4, "name": "Комплексное управление строительной деятельностью в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/kompleksnoe-upravlenie-stroitelnoy-deyatelnostyu-belarus"}, {"@type": "ListItem", "position": 5, "name": "Руководство строительным проектом в Беларуси на всех стадиях", "url": "https://step-engineering-landing.vercel.app/blog/rukovodstvo-stroitelnym-proektom-belarus"}, {"@type": "ListItem", "position": 6, "name": "Финансовый план и бюджет строительного проекта в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/byudzhet-stroitelnogo-proekta-belarus"}, {"@type": "ListItem", "position": 7, "name": "Подбор технологии и материалов для строительства в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/podbor-tehnologiy-materialov-oborudovaniya-belarus"}, {"@type": "ListItem", "position": 8, "name": "Инженерная оценка объекта перед покупкой: Беларусь", "url": "https://step-engineering-landing.vercel.app/blog/investicionnye-resheniya-inzhenernaya-ocenka-obekta-belarus"}, {"@type": "ListItem", "position": 9, "name": "Исполнительная документация в Беларуси: состав и контроль", "url": "https://step-engineering-landing.vercel.app/blog/kontrol-ispolnitelnoy-dokumentacii-stroitelstvo-belarus"}, {"@type": "ListItem", "position": 10, "name": "Регуляторы строительства Беларуси: надзор и осмотры", "url": "https://step-engineering-landing.vercel.app/blog/rabota-s-regulyatorami-stroitelstvo-belarus"}]}
+</script>
 </head>
 <body>
 
 <div class="topbar">
  <div class="wrap">
- <a class="lockup" href="/" style="text-decoration:none;gap:10px"><img src="/logo-mark.svg" alt="ШАГ" style="height:40px;display:block"><span style="color:#5b6b7b;font-size:11.5px;line-height:1.3">инженерно-консалтинговая<br>группа</span></a>
+ <a class="lockup" href="/"><img src="/logo-mark.svg" alt="ШАГ"><span>инженерно-консалтинговая<br>группа</span></a>
  <a class="cta-mini" href="/#form">Разобрать мою ситуацию</a>
  </div>
 </div>
@@ -60,63 +67,86 @@
 <p>Практические разборы для заказчиков стройки в Беларуси: что делать на каждом этапе — от обследования здания до защиты экспертизы в суде, от сметы до приёмки объекта. Готовим сами, по законодательству Республики Беларусь; цифры и нормативные документы проверяем перед публикацией.</p>
 
 <div class="bitem">
+ <span class="tag">Для суда</span>
  <h2><a href="/blog/sudebnaya-stroitelno-tehnicheskaya-ekspertiza-belarus">Судебная строительно-техническая экспертиза в Беларуси: 2026</a></h2>
  <p>Судебная строительно-техническая экспертиза в Беларуси: срок до 30 дней, цены от 250 BYN, кто назначает и как оспорить заключение. Помогаем в Минске.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
 <div class="bitem">
+ <span class="tag">Обследование</span>
  <h2><a href="/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus">Обследование зданий и сооружений в Беларуси: цены 2026</a></h2>
  <p>Техническое обследование зданий и сооружений в Минске и Беларуси: цены от 300 BYN, сроки от 3 дней, нормы СН 1.04.01-2020 и аттестованные исполнители.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
 <div class="bitem">
+ <span class="tag">Технадзор</span>
  <h2><a href="/blog/tehnicheskiy-nadzor-za-stroitelstvom-belarus">Технический надзор за строительством в Беларуси: цены 2026</a></h2>
  <p>Технический надзор за строительством и ремонтом в Минске: что проверяет инженер, цены от 50 до 500 BYN, отличия от авторского надзора. Опыт группы ШАГ.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
 <div class="bitem">
+ <span class="tag">Управление</span>
  <h2><a href="/blog/kompleksnoe-upravlenie-stroitelnoy-deyatelnostyu-belarus">Комплексное управление строительной деятельностью в Беларуси</a></h2>
  <p>Комплексное управление строительной деятельностью в Беларуси: функции инженерной организации, отличие от технадзора, цена под проект. Консультация группы ШАГ.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
 <div class="bitem">
+ <span class="tag">Руководство</span>
  <h2><a href="/blog/rukovodstvo-stroitelnym-proektom-belarus">Руководство строительным проектом в Беларуси на всех стадиях</a></h2>
  <p>Руководство строительным проектом в Беларуси: все стадии от идеи до гарантии, функции руководителя, отличие от прораба и технадзора, документы РБ.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
 <div class="bitem">
+ <span class="tag">Бюджет</span>
  <h2><a href="/blog/byudzhet-stroitelnogo-proekta-belarus">Финансовый план и бюджет строительного проекта в Беларуси</a></h2>
  <p>Как составить бюджет строительного проекта в Беларуси: 12 глав сводного сметного расчёта, резерв 2–4%, уточнение по стадиям и контроль стоимости в 2026 году.</p>
  <p class="bdate">Август 2026</p>
 </div>
 
-<p class="src">Новый разбор — примерно раз в неделю; материал каждого обновляем при изменении нормативной базы.</p>
-
 <div class="bitem">
+ <span class="tag">Технологии</span>
  <h2><a href="/blog/podbor-tehnologiy-materialov-oborudovaniya-belarus">Подбор технологии и материалов для строительства в Беларуси</a></h2>
  <p>Совместный подбор технологий, материалов и оборудования в Беларуси: критерии выбора, способы производства работ, ошибки и техника. Консультация группы ШАГ.</p>
  <p class="bdate">Август 2026</p>
 </div>
+
+<div class="bitem">
+ <span class="tag">Инвестиции</span>
+ <h2><a href="/blog/investicionnye-resheniya-inzhenernaya-ocenka-obekta-belarus">Инженерная оценка объекта перед покупкой: Беларусь</a></h2>
+ <p>Инженерная оценка объекта перед покупкой в Беларуси: DD-чеклист, скрытые дефекты, как оценка влияет на торг и CAPEX. Для инвесторов и покупателей недвижимости.</p>
+ <p class="bdate">Август 2026</p>
 </div>
+
+<div class="bitem">
+ <span class="tag">Документация</span>
+ <h2><a href="/blog/kontrol-ispolnitelnoy-dokumentacii-stroitelstvo-belarus">Исполнительная документация в Беларуси: состав и контроль</a></h2>
+ <p>Состав исполнительной документации в Беларуси: журналы, чертежи, акты скрытых работ. Когда проверять, чем грозит отсутствие и как восстановить комплект.</p>
+ <p class="bdate">Август 2026</p>
+</div>
+
+<div class="bitem">
+ <span class="tag">Регуляторы</span>
+ <h2><a href="/blog/rabota-s-regulyatorami-stroitelstvo-belarus">Регуляторы строительства Беларуси: надзор и осмотры</a></h2>
+ <p>Кто контролирует стройку в Беларуси: ДКНС, исполкомы, приёмочные комиссии. Проверок с 2018 года нет — осмотры и мониторинги. Как сдать объект без потерь.</p>
+ <p class="bdate">Август 2026</p>
+</div>
+
+<p class="bnote">Новый разбор — примерно раз в неделю; материал каждого обновляем при изменении нормативной базы.</p>
+
+ </div>
 </article>
-<p style="margin:8px 0"><a href="/blog/investicionnye-resheniya-inzhenernaya-ocenka-obekta-belarus" style="color:#14477e;font-weight:600">Инвестрешения</a></p>
-<p style="margin:8px 0"><a href="/blog/kontrol-ispolnitelnoy-dokumentacii-stroitelstvo-belarus" style="color:#14477e;font-weight:600">Документация</a></p>
-<p style="margin:8px 0"><a href="/blog/rabota-s-regulyatorami-stroitelstvo-belarus" style="color:#14477e;font-weight:600">Регуляторы</a></p>
+
 <footer>
  <div class="wrap">
- <span>ШАГ — инженерно-консалтинговая группа · Минск · <a href="/" style="color:var(--accent)">Главная страница услуг</a></span>
+ <span>ШАГ — инженерно-консалтинговая группа · Минск · <a href="/" style="color:var(--accent)">Главная страница услуг</a> · <a href="/blog/sudebnaya-stroitelno-tehnicheskaya-ekspertiza-belarus" style="color:var(--accent)">Судебная СТЭ</a> · <a href="/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus" style="color:var(--accent)">Обследование зданий</a> · <a href="/blog/tehnicheskiy-nadzor-za-stroitelstvom-belarus" style="color:var(--accent)">Технадзор</a> · <a href="/blog/kompleksnoe-upravlenie-stroitelnoy-deyatelnostyu-belarus" style="color:var(--accent)">Управление стройкой</a> · <a href="/blog/rukovodstvo-stroitelnym-proektom-belarus" style="color:var(--accent)">Руководство проектом</a> · <a href="/blog/byudzhet-stroitelnogo-proekta-belarus" style="color:var(--accent)">Бюджет проекта</a> · <a href="/blog/podbor-tehnologiy-materialov-oborudovaniya-belarus" style="color:var(--accent)">Подбор технологий</a> · <a href="/blog/investicionnye-resheniya-inzhenernaya-ocenka-obekta-belarus" style="color:var(--accent)">Инвестрешения</a> · <a href="/blog/kontrol-ispolnitelnoy-dokumentacii-stroitelstvo-belarus" style="color:var(--accent)">Документация</a></span>
  <span>+375 29 158 57 02 · ikarpelev@mail.ru</span>
  </div>
 </footer>
-
-<script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "ItemList", "name": "Статьи и разборы — инженерно-консалтинговая группа ШАГ", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Судебная строительно-техническая экспертиза в Беларуси: 2026", "url": "https://step-engineering-landing.vercel.app/blog/sudebnaya-stroitelno-tehnicheskaya-ekspertiza-belarus"}, {"@type": "ListItem", "position": 2, "name": "Обследование зданий и сооружений в Беларуси: цены 2026", "url": "https://step-engineering-landing.vercel.app/blog/obsledovanie-zdaniy-i-sooruzheniy-belarus"}, {"@type": "ListItem", "position": 3, "name": "Технический надзор за строительством в Беларуси: цены 2026", "url": "https://step-engineering-landing.vercel.app/blog/tehnicheskiy-nadzor-za-stroitelstvom-belarus"}, {"@type": "ListItem", "position": 4, "name": "Комплексное управление строительной деятельностью в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/kompleksnoe-upravlenie-stroitelnoy-deyatelnostyu-belarus"}, {"@type": "ListItem", "position": 5, "name": "Руководство строительным проектом в Беларуси на всех стадиях", "url": "https://step-engineering-landing.vercel.app/blog/rukovodstvo-stroitelnym-proektom-belarus"}, {"@type": "ListItem", "position": 6, "name": "Финансовый план и бюджет строительного проекта в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/byudzhet-stroitelnogo-proekta-belarus"}, {"@type": "ListItem", "position": 7, "name": "Подбор технологии и материалов для строительства в Беларуси", "url": "https://step-engineering-landing.vercel.app/blog/podbor-tehnologiy-materialov-oborudovaniya-belarus"}]}
-</script>
 
 </body>
 </html>
