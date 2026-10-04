@@ -15,7 +15,7 @@
  }
  * { margin:0; padding:0; box-sizing:border-box; }
  body { background:var(--bg); color:var(--fg); font:17px/1.7 "Segoe UI",system-ui,-apple-system,sans-serif; }
- h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }.wrap { max-width:860px; margin:0 auto; padding:0 20px; }.topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }.topbar.wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }.topbar a.brandlink { color:var(--accent); font-weight:700; text-decoration:none; }.topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }.topbar a.cta-mini:hover { opacity:.92; }
+ h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; line-height:1.25; }.wrap { max-width:860px; margin:0 auto; padding:0 20px; }.topbar { background:var(--bg2); border-bottom:1px solid #dde4ec; padding:14px 0; }.topbar .wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }.topbar a.brandlink { color:var(--accent); font-weight:700; text-decoration:none; }.topbar a.cta-mini { background:var(--accent); color:#fff; padding:9px 20px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; white-space:nowrap; }.topbar a.cta-mini:hover { opacity:.92; }.top-cta { margin-left:auto; }
 
  article { padding:56px 0 24px; }
  article h1 { font-size:clamp(28px,4.5vw,44px); margin-bottom:22px; }
@@ -44,8 +44,8 @@
 
 <div class="topbar">
  <div class="wrap">
- <a class="lockup" href="/" style="text-decoration:none;gap:10px"><img src="/logo-mark.svg" alt="ШАГ" style="height:40px;display:block"><span style="color:#5b6b7b;font-size:11.5px;line-height:1.3">инженерно-консалтинговая<br>группа</span></a>
- <a class="cta-mini" href="/#form">Разобрать мою ситуацию</a>
+ <a class="lockup" href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none"><img src="/logo-mark.svg" alt="ШАГ" style="height:52px;display:block"><span style="color:#5b6b7b;font-size:14px;line-height:1.35;letter-spacing:.02em;text-transform:lowercase">инженерная<br>консалтинговая<br>группа</span></a>
+ <div class="top-cta"><a class="cta-mini" href="/#form">Разобрать мою ситуацию</a></div>
  </div>
 </div>
 
