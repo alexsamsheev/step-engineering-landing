@@ -92,8 +92,14 @@
   /* TRUST */
   .trust { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
   .trust .fact { background:#ffffff; border:1px solid #e6ecf2; border-radius:var(--radius);
-    padding:24px; box-shadow:var(--shadow-sm); }
-  .trust b { font-size:28px; color:var(--accent); display:block; font-family:Georgia,serif; margin-bottom:6px; }
+    padding:26px; box-shadow:var(--shadow-sm); }
+  .trust .flabel { font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:16px; }
+  .trust .fnum { display:flex; align-items:baseline; gap:10px; padding-bottom:14px;
+    margin-bottom:14px; border-bottom:1px solid #e6ecf2; }
+  .trust .fnum b { font-size:42px; line-height:1; color:var(--accent); font-family:Georgia,serif; font-weight:400; }
+  .trust .fnum i { font-style:normal; font-size:14.5px; color:var(--muted); }
+  .trust .fact p { font-size:15.5px; line-height:1.6; }
 
   /* SERVICES / TEAM / REVIEWS */
   .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
@@ -137,8 +143,13 @@
   .formnote { color:var(--muted); font-size:14px; }
 
   /* DIRECTIONS */
-  .dirgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px 18px; margin-top:18px; }
-  .dirgrid span { background:var(--bg2); border-radius:12px; padding:12px 14px; font-size:15.5px; line-height:1.45; }
+  .dirgrid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:18px; }
+  .dgroup { background:#ffffff; border:1px solid #e6ecf2; border-radius:var(--radius);
+    padding:24px; box-shadow:var(--shadow-sm); }
+  .dgroup h3 { font-size:19px; margin-bottom:14px; }
+  .dgroup span { display:block; background:var(--bg2); border-radius:12px;
+    padding:11px 14px; font-size:15px; line-height:1.45; margin-bottom:8px; }
+  .dgroup span:last-child { margin-bottom:0; }
 
   /* PROCESS */
   .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:22px; counter-reset:step; }
@@ -158,7 +169,7 @@
 
   @media (max-width:900px) {
     .steps { grid-template-columns:repeat(2,1fr); }
-    .dirgrid { grid-template-columns:repeat(2,1fr); }
+    .dirgrid { grid-template-columns:1fr; }
   }
   @media (max-width:760px) {
     .trust, .grid3 { grid-template-columns:1fr; }
@@ -205,9 +216,21 @@
     <h2>Почему суды принимают наши заключения</h2>
     <br>
     <div class="trust">
-      <div class="fact"><b>2+4</b> организации группы ШАГ (ОДО «Стройтестэкспертиза», ОДО «Инвостройтест Плюс») и партнёров (ООО «А-Спектр», ООО «Импострой» и др.) — весь цикл стройки без цепочки субподрядчиков</div>
-      <div class="fact"><b>11</b> направлений: обследование, судебная СТЭ, технадзор, финансы проекта, документация, регуляторы — один договор вместо пяти подрядчиков</div>
-      <div class="fact"><b>3</b> руководителя доступны вам напрямую: телефон и почта каждого указаны на сайте. Никаких «менеджеров по работе с клиентами»</div>
+      <div class="fact">
+        <div class="flabel">Группа</div>
+        <div class="fnum"><b>2</b><i>флагманские организации</i></div>
+        <p>ОДО «Стройтестэкспертиза» и ОДО «Инвостройтест Плюс» — ядро группы. Компетенции по всему циклу стройки: без цепочки субподрядчиков.</p>
+      </div>
+      <div class="fact">
+        <div class="flabel">Компетенции</div>
+        <div class="fnum"><b>11</b><i>направлений работ</i></div>
+        <p>От обследования и судебной СТЭ до технадзора, финансов проекта и работы с регуляторами — один договор вместо пяти подрядчиков.</p>
+      </div>
+      <div class="fact">
+        <div class="flabel">Команда</div>
+        <div class="fnum"><b>3</b><i>руководителя</i></div>
+        <p>Доступны вам напрямую: телефон и почта каждого указаны на сайте. Никаких «менеджеров по работе с клиентами».</p>
+      </div>
     </div>
   </div>
 </section>
@@ -215,7 +238,7 @@
 <section id="services" style="background:var(--bg2)">
   <div class="wrap">
     <div class="kicker">Услуги</div>
-    <h2>Три сценария, в которых нас зовут</h2>
+    <h2>Три главных сценария, в которых нас зовут</h2>
     <p class="lead">Каждый начинается с чужой боли и заканчивается измеримым результатом.</p>
     <br>
     <div class="grid3">
@@ -228,7 +251,7 @@
         </div>
       </div>
       <div class="cardx" style="padding:0;overflow:hidden">
-        <img src="imgs/review.jpg" alt="Эксперт ШАГ обсуждает результаты обследования на площадке" style="width:100%;height:180px;object-fit:cover;display:block">
+        <img src="imgs/review.jpg" alt="Эксперт ШАГ фиксирует дефекты железобетонной конструкции при обследовании" style="width:100%;height:180px;object-fit:cover;display:block">
         <div style="padding:26px">
         <h3>Судебная строительно-техническая экспертиза</h3>
         <p class="pain">Подрядчик говорит «так и было в проекте», а сроки суда горят. Неподготовленное заключение разваливается под перекрёстным допросом.</p>
@@ -236,7 +259,7 @@
         </div>
       </div>
       <div class="cardx" style="padding:0;overflow:hidden">
-        <img src="imgs/city.jpg" alt="Современный жилой комплекс под контролем технадзора ШАГ" style="width:100%;height:180px;object-fit:cover;display:block">
+        <img src="imgs/city.jpg" alt="Инженер технадзора ШАГ с планшетом на строящемся жилом комплексе" style="width:100%;height:180px;object-fit:cover;display:block">
         <div style="padding:26px">
         <h3>Управление строительством и технадзор</h3>
         <p class="pain">Смета ползёт вверх, исполнительная документация отстаёт от работ, к приёмке всплывает хаос.</p>
@@ -253,17 +276,26 @@
     <h2>Одиннадцать направлений — одна группа</h2>
     <p class="lead">Не нужно собирать обследователя, эксперта, технадзор и финансового контролёра по отдельности.</p>
     <div class="dirgrid">
-      <span>Обследование зданий и сооружений (инженерных конструкций)</span>
-      <span>Судебная строительно-техническая экспертиза</span>
-      <span>Комплексное управление строительной деятельностью</span>
-      <span>Технический надзор</span>
-      <span>Подбор технологий, материалов, оборудования и способа строительства</span>
-      <span>Руководство проектом на всех стадиях</span>
-      <span>Финансовое планирование: состав затрат, сроки и бюджет</span>
-      <span>Помощь в инвестиционных решениях</span>
-      <span>Контроль исполнительной и технической документации</span>
-      <span>Работа с регуляторами</span>
-      <span>Управление подрядными структурами</span>
+      <div class="dgroup">
+        <h3>Обследование и экспертиза</h3>
+        <span>Обследование зданий и сооружений (инженерных конструкций)</span>
+        <span>Судебная строительно-техническая экспертиза</span>
+        <span>Помощь в инвестиционных решениях</span>
+      </div>
+      <div class="dgroup">
+        <h3>Строительство и надзор</h3>
+        <span>Комплексное управление строительной деятельностью</span>
+        <span>Руководство проектом на всех стадиях</span>
+        <span>Технический надзор</span>
+        <span>Управление подрядными структурами</span>
+        <span>Подбор технологий, материалов, оборудования и способа строительства</span>
+      </div>
+      <div class="dgroup">
+        <h3>Документы, финансы, регуляторы</h3>
+        <span>Финансовое планирование: состав затрат, сроки и бюджет</span>
+        <span>Контроль исполнительной и технической документации</span>
+        <span>Работа с регуляторами</span>
+      </div>
     </div>
   </div>
 </section>
@@ -340,7 +372,7 @@
 <section id="articles">
   <div class="wrap">
     <div class="kicker">Блог</div>
-    <h2>Разборы, которые экономят деньги</h2>
+    <h2>Ответы, которые экономят деньги</h2>
     <p class="lead">Практические материалы инженеров группы: цены в BYN, сроки по закону, типовые ошибки заказчиков — всё проверено по документам.</p>
     <br>
     <div class="artgrid">
@@ -365,7 +397,7 @@
       <a class="art-card art-card--all" href="/blog/">
         <span class="tag">Все материалы</span>
         <h3>Все статьи</h3>
-        <p>Ещё 4 разбора: бюджет проекта, руководство проектом, управление стройкой и подбор технологий.</p>
+        <p>Ещё 4 ответа: бюджет проекта, руководство проектом, управление стройкой и подбор технологий.</p>
         <span class="go">Открыть блог →</span>
       </a>
     </div>
